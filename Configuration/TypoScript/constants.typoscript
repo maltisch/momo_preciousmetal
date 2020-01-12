@@ -1,0 +1,15 @@
+
+plugin.tx_momopreciousmetal_pmlisting {
+    view {
+        # cat=plugin.tx_momopreciousmetal_pmlisting/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:momo_preciousmetal/Resources/Private/Templates/
+        # cat=plugin.tx_momopreciousmetal_pmlisting/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:momo_preciousmetal/Resources/Private/Partials/
+        # cat=plugin.tx_momopreciousmetal_pmlisting/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:momo_preciousmetal/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_momopreciousmetal_pmlisting//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

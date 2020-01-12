@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-12-17T09:44:59Z" product-name="momo_preciousmetal">
+		<header/>
+		<body>
+			<trans-unit id="date.description">
+				<source>date</source>
+			</trans-unit>
+			<trans-unit id="currency.description">
+				<source>currency</source>
+			</trans-unit>
+			<trans-unit id="xau_price.description">
+				<source>xauPrice</source>
+			</trans-unit>
+			<trans-unit id="xau_close.description">
+				<source>xauClose</source>
+			</trans-unit>
+			<trans-unit id="xau_open.description">
+				<source>xauOpen</source>
+			</trans-unit>
+			<trans-unit id="xau_change.description">
+				<source>xauOpen</source>
+			</trans-unit>
+			<trans-unit id="xag_price.description">
+				<source>xagPrice</source>
+			</trans-unit>
+			<trans-unit id="xag_close.description">
+				<source>xagClose</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

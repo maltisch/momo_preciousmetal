@@ -1,0 +1,21 @@
+.tx-preciousmetal hr {
+	margin-top: 40px;
+}
+
+.tx-preciousmetal table td.uid {
+	text-align: right;
+	padding: 0 20px;
+	width: 1%;
+}
+
+.tx-preciousmetal table td.left {
+	text-align: left;
+}
+
+.tx-preciousmetal table td.right {
+	text-align: right;
+	font-weight: bold;
+}
+
+.tx-preciousmetal span.red { color: red;}
+.tx-preciousmetal span.green { color: green;}

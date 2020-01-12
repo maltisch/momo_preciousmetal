@@ -1,0 +1,71 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+{namespace momo = MomoWebdevelopment\MomoPreciousmetal\ViewHelpers}
+
+	<f:layout name="Default" />
+
+	<f:section name="content">
+		<h2><f:translate key="list.headline" />:</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<h3 class="aurum-color"><f:translate key="list.headline.eur" /></h3>
+				<f:widget.paginate objects="{pms_eur}" as="paginatedPms" configuration="{itemsPerPage: 10, maximumNumberOfLinks: 3}">
+					<table  class="tx_momopreciousmetal table table-dark table-sm" >
+						<thead>
+							<tr>
+								<th><f:translate key="tx_momopreciousmetal_domain_model_pm.date" /></th>
+								<th><f:translate key="tx_momopreciousmetal_domain_model_pm.xau_price" /></th>
+								<th><f:translate key="tx_momopreciousmetal_domain_model_pm.xau_open" /></th>
+								<th><f:translate key="tx_momopreciousmetal_domain_model_pm.xau_change" /></th>
+							</tr>
+						</thead>
+						<tbody>
+							<f:for each="{paginatedPms}" as="pm">
+								<tr>
+									<td> {pm.date -> f:format.date()}</td>
+									<td>
+										<f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{pm.xauPrice}</f:format.number>
+									</td>
+									<td>
+										<f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{pm.xauOpen}</f:format.number>
+									</td>
+									<td> <momo:change change="{pm.xauChange}">{pm.xauChange}</momo:change> </td>
+								</tr>
+							</f:for>
+						</tbody>
+					</table>
+				</f:widget.paginate>
+			</div>
+			<div class="col-md-6">
+				<h3 class="aurum-color"><f:translate key="list.headline.usd" /></h3>
+				<f:widget.paginate objects="{pms_usd}" as="paginatedPms" configuration="{itemsPerPage: 10, maximumNumberOfLinks: 3}">
+					<table  class="tx_momopreciousmetal table table-sm">
+						<thead>
+							<tr>
+								<th><f:translate key="tx_momopreciousmetal_domain_model_pm.date" /></th>
+								<f:comment>	<th><f:translate key="tx_momopreciousmetal_domain_model_pm.currency" /></th></f:comment>
+								<th><f:translate key="tx_momopreciousmetal_domain_model_pm.xau_price" /></th>
+								<th><f:translate key="tx_momopreciousmetal_domain_model_pm.xau_open" /></th>
+								<th><f:translate key="tx_momopreciousmetal_domain_model_pm.xau_change" /></th>
+							</tr>
+						</thead>
+						<tbody>
+							<f:for each="{paginatedPms}" as="pm">
+								<tr>
+									<td> {pm.date -> f:format.date()}</td>
+									<f:comment>	<td> <stong>{pm.currency}</stong></td></f:comment>
+									<td>
+										<f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{pm.xauPrice}</f:format.number>
+									</td>
+									<td>
+										<f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{pm.xauOpen}</f:format.number>
+									</td>
+									<td> <momo:change change="{pm.xauChange}">{pm.xauChange}</momo:change> </td>
+								</tr>
+							</f:for>
+						</tbody>
+					</table>
+				</f:widget.paginate>
+			</div>
+		</div>
+	</f:section>
+</html>

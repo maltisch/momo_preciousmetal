@@ -1,0 +1,55 @@
+.tx-momo-preciousmetal td {
+	/*color: darkgreen;*/
+}
+
+.tx-momo-preciousmetal .aurum-color {
+	color: #ffc107;
+}
+
+.tx-momo-preciousmetal .f3-widget-paginator {
+	display: inline-block;
+	border-radius: 4px;
+	margin: 20px 0px;
+	padding-left: 0px;
+}
+
+.tx-momo-preciousmetal .f3-widget-paginator > li {
+	display: inline;
+}
+
+.tx-momo-preciousmetal .f3-widget-paginator > li > a,
+.tx-momo-preciousmetal .f3-widget-paginator > li.current {
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	margin-left: -1px;
+	text-decoration: none;
+	border: 1px solid #DDD;
+	background-color: #FFF;
+	color: #000000;
+}
+
+.tx-momo-preciousmetal .f3-widget-paginator > li.current,
+.tx-momo-preciousmetal .f3-widget-paginator > li > a:hover,
+.tx-momo-preciousmetal .f3-widget-paginator > li > a:focus {
+	text-decoration: underline;
+	background-color: #EEE;
+}
+
+.tx-momo-preciousmetal .f3-widget-paginator > li:first-child > a,
+.tx-momo-preciousmetal .f3-widget-paginator > li.current:first-child {
+	margin-left: 0px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.tx-momo-preciousmetal .f3-widget-paginator > li:last-child > a,
+.tx-momo-preciousmetal .f3-widget-paginator > li.current:last-child {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.tx-momo-preciousmetal span.red { color: red; }
+.tx-momo-preciousmetal span.green { color: green; }
+
+.tx-momo-preciousmetal hr { margin-top: 4rem;}

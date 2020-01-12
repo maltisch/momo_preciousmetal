@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-12-17T09:44:59Z" product-name="momo_preciousmetal">
+		<header/>
+		<body>
+			<trans-unit id="tx_momopreciousmetal_domain_model_pm">
+				<source>Pm</source>
+			</trans-unit>
+			<trans-unit id="tx_momopreciousmetal_domain_model_pm.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_momopreciousmetal_domain_model_pm.currency">
+				<source>Currency</source>
+			</trans-unit>
+			<trans-unit id="tx_momopreciousmetal_domain_model_pm.xau_price">
+				<source>Xau Price</source>
+			</trans-unit>
+			<trans-unit id="tx_momopreciousmetal_domain_model_pm.xau_close">
+				<source>Xau Close</source>
+			</trans-unit>
+			<trans-unit id="tx_momopreciousmetal_domain_model_pm.xau_open">
+				<source>Xau Open</source>
+			</trans-unit>
+			<trans-unit id="tx_momopreciousmetal_domain_model_pm.xau_change">
+				<source>Xau Change</source>
+			</trans-unit>
+			<trans-unit id="tx_momopreciousmetal_domain_model_pm.xag_price">
+				<source>Xag Price</source>
+			</trans-unit>
+			<trans-unit id="tx_momopreciousmetal_domain_model_pm.xag_close">
+				<source>Xag Close</source>
+			</trans-unit>
+			<trans-unit id="list.headline">
+				<source>Aurum rates</source>
+			</trans-unit>
+			<trans-unit id="list.headline.eur">
+				<source>Aurum in EUR</source>
+			</trans-unit>
+			<trans-unit id="list.headline.usd">
+				<source>Aurum in USD</source>
+			</trans-unit>
+			<trans-unit id="backend.pms.list.headline">
+				<source>List of precious metal rates</source>
+			</trans-unit>
+			<trans-unit id="backend.dashboard.index.headline">
+				<source>Statistics</source>
+			</trans-unit>
+			<trans-unit id="backend.pms.list">
+				<source>Pm-Table listing</source>
+			</trans-unit>
+			<trans-unit id="backend.pms.chart">
+				<source>Pm-Charts</source>
+			</trans-unit>
+			<trans-unit id="backend.pms.import">
+				<source>Import CSV-Data</source>
+			</trans-unit>
+			<trans-unit id="backend.import.text">
+				<source>Start import!</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

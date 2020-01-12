@@ -1,0 +1,31 @@
+{namespace momo = MomoWebdevelopment\MomoPreciousmetal\ViewHelpers}
+<h3>{headline}</h3>
+
+<f:be.widget.paginate objects="{pms}" as="paginatedPms" configuration="{itemsPerPage: 7}">
+	<table class="table table-stripped table-hover">
+		<thead>
+			<tr>
+				<th><f:translate key="tx_momopreciousmetal_domain_model_pm.date" /></th>
+				<th><f:translate key="tx_momopreciousmetal_domain_model_pm.xau_open" /></th>
+				<th><f:translate key="tx_momopreciousmetal_domain_model_pm.xau_price" /></th>
+				<th><f:translate key="tx_momopreciousmetal_domain_model_pm.xau_change" /></th>
+				<th>uid</th>
+			</tr>
+		</thead>
+		<tbody>
+			<f:for each="{paginatedPms}" as="pm">
+				<tr>
+					<td class="left">
+						<f:format.date format="d-m-Y H:i">{pm.date}</f:format.date>
+					</td>
+					<td class="left"><f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{pm.xauOpen}</f:format.number></td>
+					<td class="left"><f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{pm.xauPrice}</f:format.number></td>
+					<td class="left"><momo:change change="{pm.xauChange}">{pm.xauChange}</momo:change></td>
+					<td class="uid">{pm.uid}</td>
+				</tr>
+			</f:for>
+		</tbody>
+	</table>
+</f:be.widget.paginate>
+
+

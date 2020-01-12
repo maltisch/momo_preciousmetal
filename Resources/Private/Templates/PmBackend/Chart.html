@@ -1,0 +1,22 @@
+<f:layout name="backend" />
+<f:section name="content">
+	<script>
+		let data_eur = <f:format.raw> {f:format.json(value: data_eur)}; </f:format.raw>
+		let labels_eur = <f:format.raw> {f:format.json(value: labels_eur)};</f:format.raw>
+		let data_usd = <f:format.raw> {f:format.json(value: data_usd)}; </f:format.raw>
+		let labels_usd = <f:format.raw> {f:format.json(value: labels_usd)};</f:format.raw>
+	</script>
+	<div class="row">
+		<div class="col-md-12">
+			<p><strong><f:translate key="list.headline.eur" /></strong></p>
+			<canvas id="aurum-eur" style="width:100%;"></canvas>
+		</div>
+	</div>
+	<hr />
+	<div class="row">
+		<div class="col-md-12">
+			<p><strong><f:translate key="list.headline.usd" /></strong></p>
+			<canvas id="aurum-usd" style="width:100%;"></canvas>
+		</div>
+	</div>
+</f:section>
