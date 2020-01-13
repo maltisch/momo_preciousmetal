@@ -19,6 +19,7 @@ class ChangeViewHelper extends AbstractTagBasedViewHelper
        $change = $this->arguments['change'];
        if (strpos($change, '-') === false) {
            $this->tag->addAttribute('class', 'green');
+           $change = '+' . $change;
        } else {
            $this->tag->addAttribute('class', 'red');
        }
