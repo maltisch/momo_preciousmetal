@@ -19,7 +19,7 @@ class PmTask extends \TYPO3\CMS\Scheduler\Task\AbstractTask
         if ($pmPrice) {
             $this->savePmPrice($pmPrice);
             return true;
-        }else {
+        } else {
             return false;
         }
     }
@@ -57,7 +57,7 @@ class PmTask extends \TYPO3\CMS\Scheduler\Task\AbstractTask
         $objectManager = GeneralUtility::makeInstance(ObjectManager::class);
         $pmRepository= $objectManager->get(PmRepository::class);
 
-        foreach ($pmPrice['items'] as $pmRate ) {
+        foreach ($pmPrice['items'] as $pmRate) {
             $pmEntity = GeneralUtility::makeInstance(Pm::class);
             $pmEntity->setDate($date);
             $pmEntity->setCurrency($pmRate['curr']);

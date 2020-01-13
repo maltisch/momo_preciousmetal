@@ -62,11 +62,11 @@ class Import
                         $pm->setXauChange($pmArray['Change %']);
                         $pmRepository->add($pm);
                     }
-                }else {
+                } else {
                     $result = false;
                 }
 
-            }else {
+            } else {
                 $result = false;
             }
 

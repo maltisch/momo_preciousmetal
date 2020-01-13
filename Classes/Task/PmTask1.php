@@ -20,7 +20,7 @@ class PmTask1 extends \TYPO3\CMS\Scheduler\Task\AbstractTask
         if ($pmPrice) {
             $this->savePmPrice($pmPrice);
             return true;
-        }else {
+        } else {
             return false;
         }
     }
@@ -37,7 +37,7 @@ class PmTask1 extends \TYPO3\CMS\Scheduler\Task\AbstractTask
             'USD' => "https://www.investing.com/currencies/xau-usd-historical-data"
         ];
 
-        foreach ($pmPriceUrlArray as $currency => $url ) {
+        foreach ($pmPriceUrlArray as $currency => $url) {
 
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0");
@@ -62,7 +62,7 @@ class PmTask1 extends \TYPO3\CMS\Scheduler\Task\AbstractTask
                 'change' => $tds[5]->nodeValue
             ];
         }
-      // DebuggerUtility::var_dump($pmPriceArray);
+
         return $pmPriceArray;
     }
 
