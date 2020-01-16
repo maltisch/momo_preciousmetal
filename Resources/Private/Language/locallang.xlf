@@ -57,6 +57,15 @@
 			<trans-unit id="backend.import.text">
 				<source>Start import!</source>
 			</trans-unit>
+			<trans-unit id="backend.pms.import.success">
+				<source>CSV-Import was successful!</source>
+			</trans-unit>
+			<trans-unit id="backend.pms.import.exception.operation">
+				<source>Something is wrong with the CSV-File handling!</source>
+			</trans-unit>
+			<trans-unit id="backend.pms.import.exception.doesnotexist">
+				<source>CSV-File does not exist!</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

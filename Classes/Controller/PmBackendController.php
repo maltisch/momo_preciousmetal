@@ -1,6 +1,7 @@
 <?php
 namespace MomoWebdevelopment\MomoPreciousmetal\Controller;
 
+use Exception;
 use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Backend\View\BackendTemplateView;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
@@ -97,11 +98,17 @@ class PmBackendController extends AbstractBackendController
     /**
      *  Do Import
      */
-    public function importAction(): void
+    public function importAction()
     {
-        $result = Import::importCSV();
-        $message = $result ? 'Successfull' : 'Does not Work';
-        $severity = $result ? AbstractMessage::OK : AbstractMessage::ERROR;
+        try {
+            Import::importCsv();
+            $message = $this->translate('backend.pms.import.success');
+            $severity = AbstractMessage::OK;
+        } catch (Exception $e) {
+            $message = $this->translate($e->getMessage());
+            $severity = AbstractMessage::ERROR;
+        }
+
         $this->addFlashMessage(
             $message,
             $message,
